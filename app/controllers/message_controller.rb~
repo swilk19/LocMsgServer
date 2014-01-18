@@ -1,0 +1,23 @@
+class MessageController < ApplicationController
+  def new
+  end
+
+  def index
+      @messages = Message.all
+  end
+
+  def create
+      @message = Message.new(message_params)
+      @message.save
+      redirect_to @message
+  end
+
+  def get
+  end
+
+  private
+    def message_params
+        params.require(:lat, :long, :message).permit(:lat,:long,:message)
+    end
+
+end
