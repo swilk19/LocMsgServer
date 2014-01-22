@@ -1,5 +1,8 @@
 LocMsgServer::Application.routes.draw do
   root 'messages#index'
+  
+  post '/messages/mobile', to: 'messages#create_mobile', as: 'message'
+  
   resources :messages
 
 

@@ -1,4 +1,7 @@
 class MessagesController < ApplicationController
+  
+  wrap_parameters format: [:json, :xml]
+  
   def new
   end
 
@@ -10,6 +13,12 @@ class MessagesController < ApplicationController
   end
 
 
+  def create_mobile
+        @message = Message.new(ActiveSupport::JSON.decode(request.body.string))
+        @message.save
+        respond_to 
+  end
+  
   def create
         @message = Message.new(message_params)
         @message.save

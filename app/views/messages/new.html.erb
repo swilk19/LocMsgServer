@@ -1,5 +1,5 @@
 <h1>Add new Message</h1>
-<%= form_for :message, url: messages_path do |f| %>
+<%= form_for :message, url: messages_path, :authenticity_token => false do |f| %>
   <p>
     <%= f.label :lat %><br>
     <%= f.text_field :lat %>
