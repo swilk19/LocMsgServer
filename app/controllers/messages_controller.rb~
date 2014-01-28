@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  
+
   wrap_parameters format: [:json, :xml]
   
   def new
@@ -16,7 +16,7 @@ class MessagesController < ApplicationController
   def create_mobile
         @message = Message.new(ActiveSupport::JSON.decode(request.body.string))
         @message.save
-        respond_to 
+        render :json => @message
   end
   
   def create
@@ -25,12 +25,19 @@ class MessagesController < ApplicationController
         redirect_to action: 'index'
   end
 
-  def get
+  def find
+        #This should come posted with a radius, lat, long. Output: all points within R miles of lat/long.
+        r = params[:r]
+        lat = params[:lat]
+        long = params[:long]
+        @message = Location.within(r, :origin => [lat, long]).all
+        render :json => @message
   end
 
   private
     def message_params
         params.require(:message).permit(:lat,:long,:msg)
     end
+
 
 end

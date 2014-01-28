@@ -1,0 +1,7 @@
+<p>
+    <strong> Weight Stat </strong>
+    <%= @weight.weight %>
+    <strong> Date </strong>
+    <%= @weight.created_at %>
+</p>
+

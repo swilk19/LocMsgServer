@@ -15,4 +15,5 @@
     <% end %>
 </table>
 <p>
-<%= link_to "New Message", :controller => "messages#new", :action => "create" %>
+<%= link_to "New Message", :controller => "messages", :action => "new" %><br>
+<%= link_to "Get Messages", :controller => "messages", :action => "get" %>

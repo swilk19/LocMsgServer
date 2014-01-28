@@ -1,0 +1,23 @@
+<h1>Get Message Around Location</h1>
+<%= form_for :message, url: messages_path, :authenticity_token => false do |f| %>
+
+  <p>
+    <%= f.label :r %><br>
+    <%= f.text_area :r %>
+  </p>
+
+
+  <p>
+    <%= f.label :lat %><br>
+    <%= f.text_field :lat %>
+  </p>
+ 
+  <p>
+    <%= f.label :long %><br>
+    <%= f.text_field :long %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

@@ -1,7 +1,18 @@
 <p>
-    <strong> Weight Stat </strong>
-    <%= @weight.weight %>
-    <strong> Date </strong>
-    <%= @weight.created_at %>
+<table>
+    <tr>
+        <th>Message:<br></th>
+        <th>Lat:<br></th>
+        <th>Long:<br></th>
+    </tr>
+
+    <% @messages.each do |message| %>
+        <tr>
+            <td><%= message.msg %></td>
+            <td><%= message.lat %></td>
+            <td><%= message.long %></td>
+        </tr>
+    <% end %>
+</table>
 </p>
 
