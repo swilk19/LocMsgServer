@@ -8542,3 +8542,371 @@ NameError (uninitialized constant MessagesController::Location):
   Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
   Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
   Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-08 00:27:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MessagesController#index as HTML
+Geokit is using the domain: localhost
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered messages/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 64ms (Views: 48.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-08 00:27:37 -0500
+
+
+Started GET "/assets/message.css?body=1" for 127.0.0.1 at 2014-02-08 00:27:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-08 00:27:37 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-08 00:27:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-08 00:27:37 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-02-08 00:27:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-08 00:27:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-08 00:27:37 -0500
+
+
+Started GET "/assets/message.js?body=1" for 127.0.0.1 at 2014-02-08 00:27:37 -0500
+
+
+Started GET "/messages/find" for 127.0.0.1 at 2014-02-08 00:27:42 -0500
+Processing by MessagesController#find as HTML
+Geokit is using the domain: localhost
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant MessagesController::Location):
+  app/controllers/messages_controller.rb:33:in `find'
+
+
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+
+
+Started GET "/messages/find" for 127.0.0.1 at 2014-02-08 00:27:42 -0500
+Processing by MessagesController#find as HTML
+Geokit is using the domain: localhost
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant MessagesController::Location):
+  app/controllers/messages_controller.rb:33:in `find'
+
+
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+
+
+Started GET "/messages/find" for 127.0.0.1 at 2014-02-08 00:35:51 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MessagesController#find as HTML
+Geokit is using the domain: localhost
+Completed 500 Internal Server Error in 14ms
+
+NameError (uninitialized constant MessagesController::Location):
+  app/controllers/messages_controller.rb:33:in `find'
+
+
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-08 00:35:56 -0500
+Processing by MessagesController#index as HTML
+Geokit is using the domain: localhost
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered messages/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 46ms (Views: 43.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-08 00:35:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-08 00:35:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-08 00:35:56 -0500
+
+
+Started GET "/assets/message.css?body=1" for 127.0.0.1 at 2014-02-08 00:35:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-08 00:35:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-08 00:35:56 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-02-08 00:35:56 -0500
+
+
+Started GET "/assets/message.js?body=1" for 127.0.0.1 at 2014-02-08 00:35:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-08 00:35:56 -0500
+
+
+Started GET "/messages/find" for 127.0.0.1 at 2014-02-08 00:36:00 -0500
+Processing by MessagesController#find as HTML
+Geokit is using the domain: localhost
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant MessagesController::Location):
+  app/controllers/messages_controller.rb:33:in `find'
+
+
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.9ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.9ms)
+
+
+Started GET "/messages/find" for 127.0.0.1 at 2014-02-08 00:36:00 -0500
+Processing by MessagesController#find as HTML
+Geokit is using the domain: localhost
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant MessagesController::Location):
+  app/controllers/messages_controller.rb:33:in `find'
+
+
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (21.5ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.6ms)
+
+
+Started GET "/messages/find" for 127.0.0.1 at 2014-02-08 00:37:53 -0500
+Processing by MessagesController#find as HTML
+Geokit is using the domain: localhost
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant MessagesController::Location):
+  app/controllers/messages_controller.rb:33:in `find'
+
+
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.5ms)
+
+
+Started GET "/messages/find" for 127.0.0.1 at 2014-02-08 00:37:54 -0500
+Processing by MessagesController#find as HTML
+Geokit is using the domain: localhost
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant MessagesController::Location):
+  app/controllers/messages_controller.rb:33:in `find'
+
+
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started GET "/messages/find" for 127.0.0.1 at 2014-02-08 00:38:30 -0500
+Processing by MessagesController#find as HTML
+Geokit is using the domain: localhost
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant MessagesController::Location):
+  app/controllers/messages_controller.rb:35:in `find'
+
+
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.0ms)
+
+
+Started GET "/messages/find" for 127.0.0.1 at 2014-02-08 00:38:33 -0500
+Processing by MessagesController#find as HTML
+Geokit is using the domain: localhost
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant MessagesController::Location):
+  app/controllers/messages_controller.rb:35:in `find'
+
+
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started GET "/messages/find" for 127.0.0.1 at 2014-02-08 00:38:33 -0500
+Processing by MessagesController#find as HTML
+Geokit is using the domain: localhost
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant MessagesController::Location):
+  app/controllers/messages_controller.rb:35:in `find'
+
+
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/messages/find" for 127.0.0.1 at 2014-02-08 00:38:52 -0500
+Processing by MessagesController#find as HTML
+Geokit is using the domain: localhost
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant Message::Location):
+  app/controllers/messages_controller.rb:35:in `find'
+
+
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/messages/find" for 127.0.0.1 at 2014-02-08 00:39:12 -0500
+Processing by MessagesController#find as HTML
+Geokit is using the domain: localhost
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant MessagesController::Location):
+  app/controllers/messages_controller.rb:35:in `find'
+
+
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started GET "/messages/find" for 127.0.0.1 at 2014-02-08 00:39:12 -0500
+Processing by MessagesController#find as HTML
+Geokit is using the domain: localhost
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant MessagesController::Location):
+  app/controllers/messages_controller.rb:35:in `find'
+
+
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/messages/find" for 127.0.0.1 at 2014-02-08 00:41:31 -0500
+Processing by MessagesController#find as HTML
+Geokit is using the domain: localhost
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant MessagesController::Location):
+  app/controllers/messages_controller.rb:35:in `find'
+
+
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.1ms)
+
+
+Started GET "/messages/find" for 127.0.0.1 at 2014-02-08 00:42:06 -0500
+Processing by MessagesController#find as HTML
+Geokit is using the domain: localhost
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from find at /home/swilkins/Documents/Projects/LocMsgServer/app/controllers/messages_controller.rb:35)
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE ((
+ (CASE WHEN messages.lat IS NULL OR messages.long IS NULL THEN NULL ELSE
+ (ACOS(least(1,COS(0.0)*COS(0.0)*COS(RADIANS(messages.lat))*COS(RADIANS(messages.long))+
+ COS(0.0)*SIN(0.0)*COS(RADIANS(messages.lat))*SIN(RADIANS(messages.long))+
+ SIN(0.0)*SIN(RADIANS(messages.lat))))*3963.19)
+ END)
+ <= ))[0m
+SQLite3::SQLException: near ")": syntax error: SELECT "messages".* FROM "messages"  WHERE ((
+          (CASE WHEN messages.lat IS NULL OR messages.long IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.0)*COS(0.0)*COS(RADIANS(messages.lat))*COS(RADIANS(messages.long))+
+          COS(0.0)*SIN(0.0)*COS(RADIANS(messages.lat))*SIN(RADIANS(messages.long))+
+          SIN(0.0)*SIN(RADIANS(messages.lat))))*3963.19)
+          END)
+          <= ))
+Completed 500 Internal Server Error in 4ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near ")": syntax error: SELECT "messages".* FROM "messages"  WHERE ((
+          (CASE WHEN messages.lat IS NULL OR messages.long IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.0)*COS(0.0)*COS(RADIANS(messages.lat))*COS(RADIANS(messages.long))+
+          COS(0.0)*SIN(0.0)*COS(RADIANS(messages.lat))*SIN(RADIANS(messages.long))+
+          SIN(0.0)*SIN(RADIANS(messages.lat))))*3963.19)
+          END)
+          <= ))):
+  app/controllers/messages_controller.rb:35:in `find'
+
+
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/swilkins/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-08 00:42:24 -0500
+Processing by MessagesController#index as HTML
+Geokit is using the domain: localhost
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered messages/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-08 00:42:24 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-08 00:42:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-08 00:42:24 -0500
+
+
+Started GET "/assets/message.css?body=1" for 127.0.0.1 at 2014-02-08 00:42:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-08 00:42:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-08 00:42:24 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-02-08 00:42:24 -0500
+
+
+Started GET "/assets/message.js?body=1" for 127.0.0.1 at 2014-02-08 00:42:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-08 00:42:24 -0500
+
+
+Started GET "/messages/find?lat=40.4952195&long=-74.4402261&r=10" for 127.0.0.1 at 2014-02-08 00:43:37 -0500
+Processing by MessagesController#find as HTML
+  Parameters: {"lat"=>"40.4952195", "long"=>"-74.4402261", "r"=>"10"}
+Geokit is using the domain: localhost
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from find at /home/swilkins/Documents/Projects/LocMsgServer/app/controllers/messages_controller.rb:35)
+  [1m[36mMessage Load (0.6ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE ((
+ (CASE WHEN messages.lat IS NULL OR messages.long IS NULL THEN NULL ELSE
+ (ACOS(least(1,COS(0.7067749115928118)*COS(-1.2992270413740177)*COS(RADIANS(messages.lat))*COS(RADIANS(messages.long))+
+ COS(0.7067749115928118)*SIN(-1.2992270413740177)*COS(RADIANS(messages.lat))*SIN(RADIANS(messages.long))+
+ SIN(0.7067749115928118)*SIN(RADIANS(messages.lat))))*3963.19)
+ END)
+ <= 10))[0m
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.6ms)

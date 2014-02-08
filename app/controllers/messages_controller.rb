@@ -1,3 +1,5 @@
+require 'geokit-rails'
+
 class MessagesController < ApplicationController
 
   wrap_parameters format: [:json, :xml]
@@ -30,7 +32,7 @@ class MessagesController < ApplicationController
         r = params[:r]
         lat = params[:lat]
         long = params[:long]
-        @message = Location.within(r, :origin => [lat, long]).all
+        @message = Message.within(r, :origin => [lat, long]).all
         render :json => @message
   end
 

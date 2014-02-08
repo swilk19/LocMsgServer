@@ -1,3 +1,5 @@
+require 'geokit-rails'
+
 class Message < ActiveRecord::Base
     acts_as_mappable :default_units => :miles,
                    :default_formula => :sphere,
