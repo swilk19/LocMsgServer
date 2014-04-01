@@ -11,12 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140110001021) do
+ActiveRecord::Schema.define(version: 20140321153428) do
 
   create_table "messages", force: true do |t|
     t.decimal  "lat"
     t.decimal  "long"
     t.string   "msg",        limit: 160
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "author_id"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "email"
+    t.string   "username"
+    t.string   "password_hash"
+    t.string   "password_salt"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,10 +1,17 @@
 LocMsgServer::Application.routes.draw do
+  get "users/new"
   root 'messages#index'
   
   post '/messages/mobile', to: 'messages#create_mobile', as: 'message'
   get 'messages/find', to: 'messages#find'
   
+  get "log_out" => "sessions#destroy", :as => "log_out"
+  get "log_in" => "sessions#new", :as => "log_in"
+  get "sign_up" => "users#new", :as => "sign_up"
+  
   resources :messages
+  resources :users
+  resources :sessions
 
 
 

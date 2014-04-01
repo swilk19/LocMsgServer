@@ -3,6 +3,7 @@ require 'geokit-rails'
 class MessagesController < ApplicationController
 
   wrap_parameters format: [:json, :xml]
+  helper_method :current_user
   
   def new
   end
@@ -16,7 +17,7 @@ class MessagesController < ApplicationController
 
 
   def create_mobile
-        @message = Message.new(ActiveSupport::JSON.decode(request.body.string))
+        @message = Message.new(ActiveSupport::JSON.decode(request.body.string)) if session[:user_id]
         @message.save
         render :json => @message
   end
@@ -28,7 +29,7 @@ class MessagesController < ApplicationController
   end
 
   def find
-        #This should come posted with a radius, lat, long. Output: all points within R miles of lat/long.
+        #This should come with a radius, lat, long. Output: all points within R miles of lat/long.
         r = params[:r]
         lat = params[:lat]
         long = params[:long]
@@ -40,6 +41,9 @@ class MessagesController < ApplicationController
     def message_params
         params.require(:message).permit(:lat,:long,:msg)
     end
-
+    
+    def current_user
+        @current_user ||= User.find(session(:user_id)) if session[:user_id]
+    end
 
 end

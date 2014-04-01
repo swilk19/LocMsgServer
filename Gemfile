@@ -46,3 +46,7 @@ end
 
 # Use Geokit
 gem 'geokit-rails'
+
+#Add encryption stuff for accounts
+gem 'bcrypt-ruby', :require=>'bcrypt'
+gem 'protected_attributes'
